@@ -1,0 +1,32 @@
+.fsModalContainer {
+  display            : block;
+  position           : fixed;
+  left               : 0;
+  top                : 0;
+  width              : 100%;
+  height             : 100%;
+  background         : #f8f8f8;
+  cursor             : pointer;
+  z-index            : 10000;
+  text-align         : center;
+  opacity            : 0.98;
+  box-sizing         : border-box;
+  -webkit-transition : background 0.3s ease-in-out;
+  -moz-transition    : background 0.3s ease-in-out;
+  -ms-transition     : background 0.3s ease-in-out;
+  -o-transition      : background 0.3s ease-in-out;
+  transition         : background 0.3s ease-in-out;
+}
+
+.fsModalContainer.info {
+  background: #FFFFFF !important;
+}
+
+.fsModalContainer .fsModalMiddle {
+  position: relative;
+  top: 35%;
+  margin: 0 auto;
+  background: url('Icono-almeida-200px.png') no-repeat;
+  height: 200px;
+  width: 200px;
+}

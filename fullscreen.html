@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Fullscreen Modal</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" href="fullscreen.css" />
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <body>
+      <div class="main">
+      	 <header class="full">
+		    <h1>MAIN CONTENT</h1>
+		 </header>
+		 <div class="container">
+		    It was a fullscreen Intro
+		 </div>
+         <footer class="credits">
+            <p>Copyright &copy; — 2013 <a href="/">Fullscreen Intro</a></p>
+         </footer>
+      </div>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script type="text/javascript">
+         $(function(){
+            $(document).on('load', fullscreenIntro());
+            
+            function fullscreenIntro(){
+               $('<div class="fsModalContainer info"><div class="fsModalMiddle"></div></div>').appendTo('body');
+               setTimeout(function() {
+			      $('.fsModalContainer').fadeOut('slow', function(){ $(this).remove(); });
+			   }, 2500);
+            }
+         });
+      </script>
+   </body>
+</html>

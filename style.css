@@ -1,0 +1,43 @@
+body, html {
+	height      : 100%;
+	font-size   : 100%;
+	margin      : 0;
+	padding     : 0;
+	background  : #eee;
+	text-align  : center;
+	font-family : 'Proxima Nova', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+h1 {
+	font-size : 2.4em;
+	margin    : 10px 0 0 0;
+	padding   : 0;
+}
+
+header {
+	padding : 25px 0;
+	width   : 100%;
+}
+
+.container {
+	max-width : 480px;
+	padding   : 20px;
+	margin    : 0 auto;
+}
+
+.credits {
+	margin: 500px auto;
+	padding: 17px 0;
+	clear: both;
+	font-size: 0.75em;
+}
+
+.credits a {
+	color           : #333;
+	text-decoration : none;
+	font-weight     : bold;
+}
+
+.credits a:hover {
+	text-decoration : underline;
+}
